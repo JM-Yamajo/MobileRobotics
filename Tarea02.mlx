@@ -1,0 +1,211 @@
+Parametrización de trayectorias.
+Jhonatan Yael Martinez Vargas - A01734193
+
+% Inicio limpio de MATLAB
+clear all
+close all
+clc
+Implementar el código requerido para generar la parametrización de las siguientes trayectorias en un plano 2D.
+
+Figura 01
+
+
+
+Dado que la figura 01 es un circulo se sabe que la formula para trazar ciruclo unitario esta dada por la expresión  = 1  por que para un circlo de radio dos, basta con multiplicar por dos a la ecuacion previa.
+
+Codigo
+
+% Definir el rango de valores
+t = [0: 0.01: 2 * pi];
+
+% Definir el rango de valores de x 
+x = 2 * cos(t);
+
+% Calcular el valor correspondiente de y
+y = 2 * sin(t);
+
+% Graficar la circunferencia en el primer y tercer cuadrante
+plot(x, y);
+axis equal
+
+
+Figura 02
+
+
+Dado que la figura 02 es una combinacion de una funcion seno y coseno se deben de graficar 
+Codigo
+
+% Definir los valores para x
+x = cos(t);
+
+% Calcular el valor correspondiente de y
+y = sin(3 * t);
+
+% Graficar
+plot(x, y);
+axis equal
+
+Figura 03
+
+
+Analizando la figura 03 se puede notar que esta se encuentra conformada por varios circulos contigos y desplazados, por lo que basta con jugar con la expresion  para obtener el resultado 
+Codigo
+% Definir los valores para x
+x = 0.65 * cos(25 * t) + sin(t);
+
+% Calcular el valor correspondiente de y
+y = 0.65 * sin(25 * t) + cos(t);
+
+% Graficar
+plot(x, y);
+axis equal
+
+Ejercicios:
+
+x =2t, y = (t−3t)/3, t ∈[−2,2]
+
+% Definir el vector t
+t = linspace(-2, 2);
+
+% Definir los valores para x
+x = 2 .* t;
+
+% Calcular el valor correspondiente de y
+y = (t - (3 * t)) / 3;
+
+% Graficar
+plot(x, y);
+axis equal
+x = t−3sen(t), y = 4−3cos(t), t ∈ [0,10]
+
+% Definir el vector t
+t = linspace(0, 10);
+
+% Definir los valores para x
+x = t - 3 * sin(t);
+
+% Calcular el valor correspondiente de y
+y = 4 - 3 * cos(t);
+
+% Graficar
+plot(x, y);
+axis equal
+
+x = 3cos(t)−cos(3t), y = 4sin(3t), t ∈ [0,2π]
+
+% Definir el vector t
+t = linspace(0, 2 * pi);
+
+% Definir los valores para x
+x = 3 * cos(t) - cos(3 * t);
+
+% Calcular el valor correspondiente de y
+y = 4 * sin(3 * t);
+
+% Graficar
+plot(x, y);
+axis equal
+
+x = cos(t) + 1/2cos(7t) + 1/3sen(17t), y = sen(t) + 1/2sen(7t) + 1/3cos(17t), t ∈ [0,2π]
+
+% Definir el vector t
+t = linspace(0, 2 * pi);
+
+% Definir los valores para x
+x = cos(t) +  cos(7 * t) / 2 + sin(17 * t) / 3;
+
+% Calcular el valor correspondiente de y
+y = sin(t) / 2 + cos(17 * t) / 3;
+
+% Graficar
+plot(x, y);
+axis equal
+x = 17cos(t)+7cos(17+7t), y = 17sen(t) −7sen(17t+7t), t ∈ [0,2π]
+
+% Definir el vector t
+t = linspace(0, 2 * pi);
+
+% Definir los valores para x
+x = 17 * cos(t) + 7 * cos(17 + 7 * t);
+
+% Calcular el valor correspondiente de y
+y = 17 * sin(t) - 7 * sin(24 * t);
+
+% Graficar
+plot(x, y);
+axis equal
+
+x = 2cos(t), y = 2sen(t), t ∈ [0,14π]
+
+% Definir el vector t
+t = linspace(0, 14 * pi);
+
+% Definir los valores para x
+x = 2 * cos(t);
+
+% Calcular el valor correspondiente de y
+y = 2 * sin(t);
+
+% Graficar
+plot(x, y);
+axis equal
+
+x = 5t−4sen(t), y = 5−4cos(t), t ∈ [−2π,2π]
+
+% Definir el vector t
+t = linspace(-2 * pi, 2 * pi);
+
+% Definir los valores para x
+x = 5 * t - 4 * sin(t);
+
+% Calcular el valor correspondiente de y
+y = 5 - 4 * cos(t);
+
+% Graficar
+plot(x, y);
+axis equal
+
+x = 4cos(t)+cos(4t), y = 4sen(t) −sen(4t), t ∈ [0,2π]
+
+% Definir el vector t
+t = linspace(0, 2 * pi);
+
+% Definir los valores para x
+x = 4 * cos(t) + cos(4 * t);
+
+% Calcular el valor correspondiente de y
+y = 4 * sin(t) - sin(4 * t);
+
+% Graficar
+plot(x, y);
+axis equal
+
+x = sen(2t), y = sen(3t), t ∈ [0,2π]
+
+% Definir el vector t
+t = linspace(0, 2 * pi);
+
+% Definir los valores para x
+x = sin(2 * t);
+
+% Calcular el valor correspondiente de y
+y = sin(3 * t);
+
+% Graficar
+plot(x, y);
+axis equal
+
+x = sen(4t), y = sen(5t), t ∈ [0,2π]
+
+% Definir el vector t
+t = linspace(0, 2 * pi);
+
+% Definir los valores para x
+x = sin(4 * t);
+
+% Calcular el valor correspondiente de y
+y = sin(5 * t);
+
+% Graficar
+plot(x, y);
+axis equal
