@@ -1,7 +1,7 @@
 function  Mobile_Graph=MobilePlot(dx,dy,angz,scale)
 global  Uniciclo;
 
-% Matriz de rotaciÃ³n z
+% Matriz de rotación z
 
 Rz=[ cos(angz) -sin(angz) 0; sin(angz) cos(angz) 0; 0 0 1];
 
