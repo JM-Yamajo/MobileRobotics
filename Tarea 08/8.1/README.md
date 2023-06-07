@@ -1,1 +1,1 @@
-
+Para poder realizar las simulaciones, copia cada segmento de codigos de los archivos .mxl y copialos en el archibo .m, finalmente ajusta los pasos de la animacion y listo, podras ejecutar las simulaciones para cada uno de los casos
