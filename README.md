@@ -1,10 +1,6 @@
 # Mobile Robot Path Planning Simulations
 
-This repository contains MATLAB codes demonstrating basic simulations for path planning and control of mobile robots. It focuses on trajectory parametrization, simple LIDAR usage, coordinate mapping, and PID controller design for positioning.
-
-## Overview
-
-This project aims to provide foundational examples of path planning and control techniques for mobile robots. It includes simple implementations and simulations that are suitable for educational purposes and initial prototyping.
+This project aims to provide foundational examples of mobile robot path planning and control techniques. It includes simple implementations and simulations suitable for educational purposes and initial prototyping.
 
 ## Contents
 
